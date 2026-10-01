@@ -1,0 +1,31 @@
+export default {
+  id: 'mil-tech-wood',
+  name: 'Mil Tech Wood',
+  organization: 'Catálogo web de mobiliario',
+  category: 'Desarrollo frontend',
+  featured: false,
+  summary: 'Catálogo web para presentar cocinas, closets, puertas y otros muebles mediante categorías, tarjetas de producto y vistas de detalle con imágenes.',
+  date: null,
+  role: 'Desarrollo frontend',
+  compactCase: {
+    team: 'React, Vite y Bootstrap · Demo disponible en Netlify.',
+    participation: 'Desarrollo frontend centrado en la organización visual del catálogo, componentes reutilizables y presentación de productos, con adaptación de imágenes y contenido a distintos tamaños de pantalla.',
+    modulesTitle: 'Funcionalidades destacadas',
+    modules: ['Catálogo por categorías', 'Tarjetas de producto', 'Navegación horizontal', 'Detalle de producto', 'Galería con miniaturas', 'Diseño responsive'],
+    processSteps: ['Contenido por categorías', 'Componentes reutilizables', 'Adaptación responsive'],
+    processSummary: 'El catálogo organiza los productos en datos locales y reutiliza componentes de listado, tarjeta y detalle. Los estilos adaptan la presentación y las imágenes a diferentes tamaños de pantalla.',
+    infrastructureTitle: 'Resultado / despliegue',
+    infrastructure: 'Catálogo frontend con demo publicada en Netlify, donde se pueden recorrer las categorías y consultar las imágenes y descripciones de los productos.',
+  },
+  screenshots: [
+    { id: 'principal', caption: 'Mil Tech Wood · Vista principal', src: '/images/projects/mil-tech-wood/hero.png', alt: 'Vista principal del catálogo Mil Tech Wood' },
+    { id: 'catalogo', caption: 'Catálogo de productos', src: '/images/projects/mil-tech-wood/catalogo.png', alt: 'Categorías y tarjetas de productos de Mil Tech Wood' },
+    { id: 'detalle', caption: 'Detalle de producto', src: '/images/projects/mil-tech-wood/detalle-producto.png', alt: 'Detalle de un producto con imágenes y miniaturas' },
+  ],
+  links: { demo: 'https://mil-tech-wood.netlify.app', repository: 'https://github.com/Kevin-Guachis/mil-tech-wood-catalogo' },
+  stack: { Frontend: ['React', 'Vite', 'Bootstrap'] },
+  architectureNote: 'Componentes React para listados, tarjetas y detalle; contenido del catálogo definido en archivos locales y presentación con Bootstrap y CSS.',
+  architecture: [
+    { label: 'Frontend', technologies: 'React · Vite · Bootstrap', description: 'Catálogo web organizado en componentes reutilizables.' },
+  ],
+};

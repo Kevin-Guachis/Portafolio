@@ -1,0 +1,43 @@
+export default {
+  id: 'insignare',
+  name: 'Insignare',
+  organization: 'Instituto Politécnico Insignare',
+  category: 'Desarrollo Full Stack individual',
+  featured: false,
+  summary: 'Sistema educativo web con panel propio para publicar y administrar contenido académico e institucional, y un Sistema de Orientación Vocacional (SIOV). En producción.',
+  date: null,
+  role: 'Desarrollador Full Stack · desarrollo individual',
+  compactCase: {
+    team: 'Desarrollo individual, desde la interfaz hasta el despliegue.',
+    participation: 'Desarrollo Full Stack individual del sistema: frontend, backend, base de datos, panel administrativo, lógica de negocio, integración y despliegue. Adapté dos componentes/códigos preexistentes proporcionados por el cliente; el resto del sistema fue desarrollado por mí.',
+    modules: ['SIOV / Orientación vocacional', 'Panel administrativo', 'Universidades', 'Facultades', 'Carreras', 'Materias', 'Oferta académica', 'Noticias', 'Galerías', 'Nivelación universitaria', 'Documentos', 'Admisión', 'Estructura de exámenes', 'Calculadoras'],
+    highlights: [
+      { id: 'siov', title: 'Sistema de Orientación Vocacional', text: 'Un flujo interactivo de aproximadamente 80 preguntas que genera un perfil vocacional, relaciona áreas con carreras y universidades, permite comparar opciones y genera un informe PDF.', note: 'El estudiante registra sus datos y recibe resultados personalizados con afinidad y áreas destacadas. Puede contactar al responsable para orientación vocacional.' },
+      { id: 'panel', title: 'Panel administrativo propio', text: 'El contenido del sitio dejó de depender de WordPress y pasó a gestionarse mediante un panel administrativo propio, con operaciones CRUD para administrar contenido académico e institucional.' },
+    ],
+    processSteps: ['Desarrollo individual', 'Integración', 'Pruebas', 'Producción'],
+    processSummary: 'El sistema fue desarrollado de forma individual, integrando frontend, backend y base de datos. Posteriormente se desplegó en producción y se realizaron ajustes sobre el sistema según las necesidades del cliente.',
+    infrastructureTitle: 'Producción',
+    infrastructure: 'Despliegue en Hostinger con dominio y base de datos MySQL del cliente. Configuré frontend, backend, base de datos, rutas y los ajustes necesarios para su funcionamiento en producción.',
+  },
+  screenshots: [
+    { id: 'principal', caption: 'Instituto Politécnico Insignare', src: '/images/projects/insignare/hero.png', alt: 'Pantalla de carga de Insignare' },
+    { id: 'home', caption: 'Página principal de Insignare', src: '/images/projects/insignare/home.png', alt: 'Página principal de Insignare' },
+    { id: 'calculadoras', caption: 'Calculadoras académicas', src: '/images/projects/insignare/calculadoras.png', alt: 'Calculadoras académicas de Insignare' },
+    { id: 'siov', caption: 'Sistema de Orientación Vocacional (SIOV)', src: '/images/projects/insignare/siov.png', alt: 'Sistema de Orientación Vocacional (SIOV) de Insignare' },
+    { id: 'panel', caption: 'Panel administrativo', src: '/images/projects/insignare/panel-administrativo.png', alt: 'Panel administrativo de Insignare' },
+  ],
+  links: { production: 'https://institutoinsignare.com', repository: 'https://github.com/Kevin-Guachis/Insignare' },
+  stack: {
+    Frontend: ['React', 'Vite', 'JavaScript', 'React Router', 'Bootstrap Icons'],
+    Backend: ['PHP 8+', 'PDO', 'API REST', 'Sesiones PHP'],
+    'Base de datos': ['MySQL'],
+    'Funcionalidades y librerías': ['Chart.js', 'jsPDF', 'SweetAlert2'],
+  },
+  architectureNote: 'El frontend consume la API del backend, que gestiona autenticación, lógica de negocio y acceso a MySQL.',
+  architecture: [
+    { label: 'Frontend', technologies: 'React · Vite · JavaScript' },
+    { label: 'Backend', technologies: 'PHP · API REST · Sesiones' },
+    { label: 'Persistencia', technologies: 'PDO · MySQL' },
+  ],
+};
