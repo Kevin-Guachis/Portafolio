@@ -22,7 +22,7 @@ export default {
     { id: 'catalogo', caption: 'Catálogo de productos', src: '/images/projects/mil-tech-wood/catalogo.png', alt: 'Categorías y tarjetas de productos de Mil Tech Wood' },
     { id: 'detalle', caption: 'Detalle de producto', src: '/images/projects/mil-tech-wood/detalle-producto.png', alt: 'Detalle de un producto con imágenes y miniaturas' },
   ],
-  links: { demo: 'https://mil-tech-wood.netlify.app', repository: 'https://github.com/Kevin-Guachis/mil-tech-wood-catalogo' },
+  links: { demo: 'https://mil-tech-wood.netlify.app' },
   stack: { Frontend: ['React', 'Vite', 'Bootstrap'] },
   architectureNote: 'Componentes React para listados, tarjetas y detalle; contenido del catálogo definido en archivos locales y presentación con Bootstrap y CSS.',
   architecture: [

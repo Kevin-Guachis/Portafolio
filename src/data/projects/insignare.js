@@ -27,7 +27,7 @@ export default {
     { id: 'siov', caption: 'Sistema de Orientación Vocacional (SIOV)', src: '/images/projects/insignare/siov.png', alt: 'Sistema de Orientación Vocacional (SIOV) de Insignare' },
     { id: 'panel', caption: 'Panel administrativo', src: '/images/projects/insignare/panel-administrativo.png', alt: 'Panel administrativo de Insignare' },
   ],
-  links: { production: 'https://institutoinsignare.com', repository: 'https://github.com/Kevin-Guachis/Insignare' },
+  links: { production: 'https://institutoinsignare.com' },
   stack: {
     Frontend: ['React', 'Vite', 'JavaScript', 'React Router', 'Bootstrap Icons'],
     Backend: ['PHP 8+', 'PDO', 'API REST', 'Sesiones PHP'],

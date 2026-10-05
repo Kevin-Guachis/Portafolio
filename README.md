@@ -20,13 +20,13 @@ Campos: `id`, `name`, `organization`, `category`, `featured`, `summary`, `date`,
 
 Cada captura admite `src`, `alt` y `caption`. Colocar imágenes publicables en `public/images/projects/` y usar rutas como `/images/projects/conservatorio-panel.webp`. La primera captura aparece en el resumen; las siguientes, dentro del caso. Añadir texto alternativo que describa la pantalla real.
 
-`links` admite `production`, `demo` y `repository`. `production` genera el botón «Sistema en producción» y `demo` el botón «Demo»; aparecen solo cuando existe su URL. Un repositorio pendiente se muestra como botón deshabilitado con una etiqueta explícita. No se asume que el enlace de producción sea un entorno de pruebas. `stack` agrupa listas de tecnologías; `architecture` es una lista de capas con `label`, `technologies` y `description`. La arquitectura del proyecto destacado aparece siempre visible, con conexiones visuales; en los demás casos permanece dentro del desplegable.
+`links` admite `production` y `demo`. `production` genera el botón «Sistema en producción» y `demo` el botón «Demo»; aparecen solo cuando existe su URL. Los enlaces a repositorios de proyectos se omiten del portafolio. No se asume que el enlace de producción sea un entorno de pruebas. `stack` agrupa listas de tecnologías; `architecture` es una lista de capas con `label`, `technologies` y `description`. La arquitectura del proyecto destacado aparece siempre visible, con conexiones visuales; en los demás casos permanece dentro del desplegable.
 
 ## Caso de estudio del Conservatorio
 
 El contenido verificado está en `src/data/projects/conservatorio.js`. `caseSections` es opcional: cada sección admite `id`, `title`, `paragraphs` e `items`. Otros proyectos conservan su presentación anterior mientras no utilicen este campo. No se incorporaron nuevas dependencias.
 
-`links.repositories` permite varios repositorios con `label` y `url`, además del campo anterior `repository`. `architectureDirection: 'vertical'` representa el flujo de capas con flechas descendentes y `architectureNote` permite documentar su alcance.
+`architectureDirection: 'vertical'` representa el flujo de capas con flechas descendentes y `architectureNote` permite documentar su alcance.
 
 El Conservatorio utiliza `compactCase`: participación y módulos visibles, un desplegable con el proceso resumido y otro con el contenido completo de `caseSections`. El stack y la arquitectura de tres bloques permanecen visibles. Los demás proyectos conservan su presentación.
 

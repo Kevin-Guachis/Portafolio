@@ -39,9 +39,6 @@ function ProjectLinks({ links, name }) {
   return <div className="project-links">
     {links.production && <ProjectLink className="project-button primary-action" href={links.production} aria-label={`Sistema en producción: ${name}`}>Sistema en producción <span aria-hidden="true">↗</span></ProjectLink>}
     {links.demo && <ProjectLink className={`project-button ${links.production ? '' : 'primary-action'}`} href={links.demo} aria-label={`Demo: ${name}`}>Demo <span aria-hidden="true">↗</span></ProjectLink>}
-    {links.repositories?.length ? links.repositories.map((repository) => <ProjectLink className="project-button" href={repository.url} key={repository.url} aria-label={`Repositorio ${repository.label}: ${name}`}>Repositorio {repository.label} <span aria-hidden="true">↗</span></ProjectLink>) : links.repository
-      ? <ProjectLink className="project-button" href={links.repository} aria-label={`Repositorio: ${name}`}>Repositorio <span aria-hidden="true">↗</span></ProjectLink>
-      : <button className="project-button" disabled>Repositorio <span className="button-note">Pendiente</span></button>}
   </div>;
 }
 

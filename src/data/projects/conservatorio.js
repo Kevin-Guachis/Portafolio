@@ -24,10 +24,6 @@ export default {
   },
   links: {
     production: 'http://181.211.58.150',
-    repositories: [
-      { label: 'Frontend', url: 'https://github.com/Kevin-Guachis/Proyecto_CNM_Frontend' },
-      { label: 'Backend', url: 'https://github.com/Kevin-Guachis/Proyecto_CNM_BackEnd' },
-    ],
   },
   stack: {
     Frontend: ['React', 'Vite', 'JavaScript', 'Bootstrap', 'React Bootstrap', 'Axios', 'React Router'],
